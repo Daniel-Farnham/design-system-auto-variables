@@ -1,0 +1,14 @@
+<h2>Variable Creator</h2>
+<p> Click on component to transform variables...</p>
+<button id="create">Create</button>
+<script> 
+
+document.getElementById('create').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'test' } }, '*')
+}
+</script> 
+
+<!-- document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+} --> 
+
